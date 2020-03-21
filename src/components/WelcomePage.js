@@ -6,7 +6,9 @@ export default function WelcomePage() {
     <section className="welcome-page">
       <header>
         <h1>Welcome to the ultimate fan site!</h1>
-        <Link className='links' to={'/characters'}>Character Index</Link>
+        <Link className="links" to={"/characters"}>
+          Character Index
+        </Link>
         <img
           className="main-img"
           src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
