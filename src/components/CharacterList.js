@@ -1,7 +1,17 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { Link } from "react-router-dom";
+import CharacterCard from "./CharacterCard"
+import SearchForm from "./SearchForm";
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
+  const [characters, setCharacters] = useState([]);
+  const [dataIsFiltered, dataIsUpdated] = useState([])
+
+  const searching = allcharacters => {
+    dataIsUpdated(allcharacters)
+  }
 
   useEffect(() => {
     // TODO: Add API Request here - must run in `useEffect`
