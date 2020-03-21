@@ -12,5 +12,5 @@ const CharacterCard = props => {
   )
 }
 
-export default function CharacterCard;
+export default CharacterCard;
 
