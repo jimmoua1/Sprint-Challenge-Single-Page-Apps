@@ -29,7 +29,18 @@ export default function CharacterList() {
 
   return (
     <section className="character-list">
-      <h2>TODO: `array.map()` over your state here!</h2>
+      <Link className='links' to={'/'}>Home</Link>
+
+      <SearchForm searching={searching} character={characters}/>
+
+      {dataIsFiltered.map(character => (
+        <CharacterCard
+          key={character.id}
+          name={character.name}
+          species={character.species}
+          gender={character.gender}
+        />
+           ))}
     </section>
   );
 }
